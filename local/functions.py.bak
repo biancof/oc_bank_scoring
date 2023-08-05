@@ -1,0 +1,40 @@
+# Time
+import time
+from contextlib import contextmanager
+
+def set_start():
+    return time.time()
+    
+def calc_time(start_time, r=0):
+    end_time = time.time()
+    ela_time = round(end_time - start_time, r)
+    return ela_time
+    
+def print_time(text, start_time=None, ela_time=None, r=0, label='[ela_time]', print_res=True):
+    if(ela_time==None):
+        ela_time = calc_time(start_time, r)
+    ela_time_str = str(ela_time)
+    res = text.replace(label, ela_time_str)
+    if(print_res):
+        print(res)
+    else:
+        return res
+
+def script_exec_time(start_time, ela_time=None, r=0, label='[ela_time]', print_res=True):
+    txt = f"Time elapsed to execute the script: {label} sec."
+    res = print_time(text=txt, start_time=start_time, ela_time=ela_time, r=r, label=label, print_res=False)
+    if(print_res):
+        print(res)
+    else:
+        return res
+        
+@contextmanager
+def timer(title):
+    t0 = time.time()
+    yield
+    print("{} - done in {:.0f}s".format(title, time.time() - t0))
+    
+# Version 1.1 (July 12th, 2023)
+
+print("Local functions: version 1.1 (July 12th, 2023)")
+  

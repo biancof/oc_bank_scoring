@@ -1,0 +1,2 @@
+model	model_name	best_params	best_score	elapsed_time
+BalancedRandomForestClassifier()	BalancedRandomForestClassifier	{'n_estimators': 300}	0.9414543845128802	12719.0

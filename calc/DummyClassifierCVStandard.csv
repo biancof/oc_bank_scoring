@@ -1,0 +1,2 @@
+model	model_name	best_params	best_score	elapsed_time
+DummyClassifier()	DummyClassifier	{'constant': 1, 'random_state': 69, 'strategy': 'most_frequent'}	0.919092358038978	11.0
