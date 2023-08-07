@@ -1,2 +1,2 @@
 model	model_name	best_params	best_score	elapsed_time
-LogisticRegression()	LogisticRegression	{'C': 0.001, 'class_weight': 'balanced'}	0.9429685246243278	247.0
+LogisticRegression()	LogisticRegression	{'C': 0.001, 'class_weight': 'balanced'}	0.9429685246243278	243.0
