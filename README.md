@@ -16,8 +16,8 @@
 
 ## Repository branches
 
-- <a href="https://github.com/biancof/oc_bank_scoring/tree/main/">main</a>: dashboard and API in cloud version
-= <a href="https://github.com/biancof/oc_bank_scoring/tree/local/">local</a>: dashboard and API in local version
+- <a href="https://github.com/biancof/oc_bank_scoring/tree/main/">main</a>: dashboard and API in cloud version;
+- <a href="https://github.com/biancof/oc_bank_scoring/tree/local/">local</a>: dashboard and API in local version.
 
 ## Languages and frameworks
 
