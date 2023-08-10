@@ -41,9 +41,9 @@ The API is hosted on <a href="https://www.pythonanywhere.com/">PythonAnywhere cl
 
 ## Links
 
-- Da source: https://www.kaggle.com/c/home-credit-default-risk/data 
+- Data source: https://www.kaggle.com/c/home-credit-default-risk/data 
 - Kernels Kaggle (for data cleaning, exploration and engeneering):
- - https://www.kaggle.com/willkoehrsen/start-here-a-gentle-introduction;
- - https://www.kaggle.com/code/jsaguiar/lightgbm-with-simple-features/script;
+  - https://www.kaggle.com/willkoehrsen/start-here-a-gentle-introduction;
+  - https://www.kaggle.com/code/jsaguiar/lightgbm-with-simple-features/script;
 - Dashboard: https://bankscoring.streamlit.app
 - API: https://biancof.pythonanywhere.com
