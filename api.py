@@ -10,17 +10,17 @@ app = Flask(__name__)
 
 # Global variables definition
 
-'''
+#'''
 data_folder = './data/cleaned/'                                   # local API
 model_folder = 'models/'                                          # local API
 data_name = 'data_prod.csv'                                       # local API
-'''
-
 #'''
+
+'''
 data_folder = '/home/biancof/oc_bank_scoring/data/cleaned/'         # online API
 model_folder = '/home/biancof/oc_bank_scoring/models/'              # online API
 data_name = 'data_prod.csv'                                         # online API
-#'''
+'''
 
 model_name = 'model.pkl'
 sep='\t'
@@ -90,5 +90,5 @@ def predict_default():
     return jsonify(res)
     
 if __name__ == "__main__":
-    # app.run(host="localhost", port="5000", debug=True)        # local API
-    app.run(debug=True)                                         # online API
+    app.run(host="localhost", port="5000", debug=True)        # local API
+    # app.run(debug=True)                                         # online API
