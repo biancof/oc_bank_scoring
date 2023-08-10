@@ -1,5 +1,6 @@
 # Version 1.1 (July 12th, 2023)
 # Version 1.2 (July 21th, 2023)
+# Version 1.2.1 (August 10th, 2023)
 
 # Import packages
 import os, shutil
@@ -53,6 +54,8 @@ def timer(title):
 def print_shape(df, desc=None, print_res=True):
     if(desc!=None):
         desc = f"({desc}) "
+    else:
+        desc = ""
     n_rows, n_cols = df.shape
     res = f"The dataframe {desc}contains {n_rows} rows and {n_cols} columns."
     if(print_res):
@@ -73,5 +76,5 @@ def empty_folder(folder):
             print('Failed to delete %s. Reason: %s' % (file_path, e))
     
 # Print version of the package
-print("Local functions: version 1.2 (July 20th, 2023)")
+print("Local functions: version 1.2.1 (August 10th, 2023)")
   

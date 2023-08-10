@@ -5,7 +5,7 @@ import json
 
 # Global variables definition
 api_url = "http://localhost:5000/"
-n_clients = 48580
+n_clients = 1000
 
 # API tests
 class TestDefaulPredictAPI(unittest.TestCase):
@@ -89,10 +89,10 @@ class TestDefaulPredictAPI(unittest.TestCase):
         # Test # 5.1: status code = 200
         self.assertEqual(response.status_code, 200)
 
-        # Test # 5.2: the client data are correct
+        # Test # 5.2: the ptrediction is correct (Once the model re-compiled, test values have to be updated)
         prediction = response.json()
-        self.assertEqual(prediction['proba_0'], 0.5406795430947321)
-        self.assertEqual(prediction['proba_1'], 0.4593204569052679)
+        self.assertEqual(prediction['proba_0'], 0.5095365141711106)
+        self.assertEqual(prediction['proba_1'], 0.4904634858288894)
 
 if __name__ == '__main__':
     unittest.main()
