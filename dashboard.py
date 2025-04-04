@@ -9,7 +9,7 @@ from PIL import Image
 # url_api = 'http://localhost:5000/'                  # local API
 url_api = 'https://biancof.pythonanywhere.com/'     # online API
 
-st.set_option('deprecation.showPyplotGlobalUse', False)
+st.set_option('deprecation.showPyplotGlobalUse', True)
 
 def main():
     
